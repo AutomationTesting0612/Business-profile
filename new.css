@@ -1,0 +1,36 @@
+content-container {
+    display: flex;
+    flex-direction: row; /* Align children horizontally */
+    align-items: start; /* Align children to the start of the container */
+    justify-content: space-between; /* Space out children */
+    width: 100%; /* Adjust as necessary */
+}
+
+/* Styles for the image container */
+.hero-image {
+    flex: 1; /* Allocates space for the image */
+    max-width: 50%; /* Adjust as necessary */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for the main content */
+main {
+    flex: 1; /* Allocates space for the main content */
+    max-width: 50%; /* Adjust as necessary */
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .hero-image, main {
+        max-width: 100%;
+    }
+}
